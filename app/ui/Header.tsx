@@ -10,7 +10,7 @@ export default function Header() {
 
             <ul className="flex  justify-end ml-auto">
                 <li className="flex-0"><Link href="/login">로그인</Link></li>
-                <li className="flex-0 ml-3">회원가입</li>
+                <li className="flex-0 ml-3"><Link href="/">회원가입</Link></li>
             </ul>
         </div>
     );
