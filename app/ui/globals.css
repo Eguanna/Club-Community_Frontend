@@ -2,7 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/*dev*/
+*{
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+body > * { /* 테스트 */
+  margin: 0 auto;
+  width:100%;
+}
+
+ul li {
+  list-style: none;
+  
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +47,5 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
+

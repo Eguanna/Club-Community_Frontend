@@ -1,10 +1,17 @@
 import type { Config } from "tailwindcss";
+import {nextui} from "@nextui-org/react";
 
+/** @type {import('tailwindcss').Config} */
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    
+    // single component styles
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
+    // or you can use a glob pattern (multiple component styles)
+    
   ],
   theme: {
     extend: {
@@ -15,6 +22,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [nextui()],
 };
 export default config;
